@@ -1,9 +1,9 @@
 #!/bin/sh
 #
 # Thank you Kevin Vicrey for his orignal work at https://github.com/Anomen/vagrant-selenium
-# In order to modify the original Vagrant provisioning script file, we add git & build-essential 
+# In order to modify the original Vagrant provisioning script file, we add git & build-essential
 # software package and "Install Node.js and Protractor" section
-# 
+#
 #=========================================================
 
 #=========================================================
@@ -98,7 +98,7 @@ echo "ok"
 echo "Install Node.js and Protractor"
 #=========================================================
 
-NODEJS_VERSION=$(curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -)
+NODEJS_VERSION=$(curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -)
 sudo apt-get install -y nodejs
 sudo npm install -g protractor
 
